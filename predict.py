@@ -61,8 +61,13 @@ def runJob():
     q31 = form.getvalue('q31')
     q32 = form.getvalue('q32')
     q33 = form.getvalue('q33')
+    q34 = form.getvalue('q34')
+    q35 = form.getvalue('q35')
+    q36 = form.getvalue('q36')
+    q37 = form.getvalue('q37')
+    q38 = form.getvalue('q38')
     
-    inputs= q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20,q21,q22,q23,q24,q25,q26,q27,q28,q29,q30,q31,q32,q33
+    inputs= [q1,q2,q3,q4],[q5,q6,q7,q8,q9,q10,q11,q12,q13,q14],[q15,q16,q17,q18,q19],[q20,q21,q22,q23,q24,q25,q26],[q27,q28,q29,q30,q31,q32,q33,q34],[q35,q36,q37,q38]
     outputs= ['exposed', 'desiased', 'susceptible', 'recovred','recovred possible injury again', 'infectious' ]
 
     X = np.asarray(inputs)
