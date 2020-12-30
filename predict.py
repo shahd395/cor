@@ -27,6 +27,8 @@ def runJob():
     # Importing and cleaning the data
      # Create instance of FieldStorage 
     form = cgi.FieldStorage() 
+    target_names = ['exposed', 'diseased', 'susceptible' ,'recovred possible injury again','recovred', 'infectious' ]
+
     # Get data from fields
     q1 = form.getvalue('q1')
     q2 = form.getvalue('q2')
@@ -67,11 +69,9 @@ def runJob():
     q37 = form.getvalue('q37')
     q38 = form.getvalue('q38')
     
-    inputs= ['q1,q2,q3,q4'],['q5,q6,q7,q8,q9,q10,q11,q12,q13,q14'],['q15,q16,q17,q18,q19'],['q20,q21,q22,q23,q24,q25,q26'],['q27,q28,q29,q30,q31,q32,q33,q34'],['q35,q36,q37,q38']
-    outputs= ['exposed', 'desiased', 'susceptible', 'recovred','recovred possible injury again', 'infectious' ]
 
-    X = np.asarray(inputs)
-    y = np.asarray(outputs)
+    X = np.asarray(form)
+    y = np.asarray(target_names)
 
     X_train, X_test, y_train, y_test = train_test_split(X, y.ravel(), test_size = 0.2)
     ##print('X_train samples : ', X_train[:5])
@@ -98,7 +98,7 @@ def runJob():
     # 3. Log loss
     #print('log_loss = ', log_loss(["spam", "ham", "ham", "spam"],[[.1, .9], [.9, .1], [.8, .2], [.35, .65]]))
     # 4. Classificaton report
-    target_names = ['exposed', 'diseased', 'susceptible' ,'recovred possible injury again','recovred', 'infectious' ]
+    #===target_names = ['exposed', 'diseased', 'susceptible' ,'recovred possible injury again','recovred', 'infectious' ]
     #print(classification_report(y_test, yhat, labels=[1, 2, 3,4,5,6], target_names=target_names))
     # 5. Confusion matrix
     predictions = lr.predict(X_test)
