@@ -257,4 +257,8 @@ def runJob():
         print('recovred possible injury again')
     elif (0.90<= precision_score(y_test, yhat, average = "weighted", labels=[6], zero_division=0) <=0.99) and (recall_score(y_test, yhat, average = "weighted", labels=[6], zero_division=0) == 1) or   (0.95 <= f1_score (y_test, yhat,average='weighted', labels=[6], zero_division=0) <= 0.97):
         print('recovred possible injury again')
+        
+    else :
+        print('shahd')
+        result = 'shahd'
     return result
