@@ -200,5 +200,10 @@ def runJob():
     if {"q1" : '1' }:
         print('معافى')
         result = 'معافى'
+        
+    else:
+        if {"q3" : '3' }:
+            print('مصاب')
+            result = 'مصاب'
     
     return result
