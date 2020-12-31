@@ -199,6 +199,6 @@ def runJob():
     result = ''
     if {"q1" : '1' }:
         print('معافى')
-        result = 'معافى''
+        result = 'معافى'
     
     return result
