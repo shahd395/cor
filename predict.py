@@ -199,10 +199,10 @@ def runJob():
     result = ''
     if {"q1" : '1' }:
         print('معافى')
-        
+        result = معافى
         
     elif {"q3" : '3' }:
         print('مصاب')
-        result = 'مصاب'
+        result = مصاب
         
     return result
