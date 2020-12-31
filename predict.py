@@ -197,8 +197,8 @@ def runJob():
     
     #print('---------------------------------------------------------------')
     result = ''
-    if q1_value = '1'
-    print('معافى')
-    result = 'معافى'
+    if {"q1" : '1' }:
+        print('معافى')
+        result = 'معافى''
     
     return result
