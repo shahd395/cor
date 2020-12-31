@@ -199,14 +199,14 @@ def runJob():
     result = ''
     if q1 == '1' :
         print('معافى')
-        result = معافى
+        result = 'معافى'
         
     elif q3 == 3 :
         print('مصاب')
-        result = مصاب
+        result = 'مصاب'
     
     else :
-        print('مصاب')
-        result = مصاب
+        print('معرض')
+        result = 'معرض'
         
     return result
