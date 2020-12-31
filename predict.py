@@ -197,8 +197,8 @@ def runJob():
     
     #print('---------------------------------------------------------------')
     result = ''
-    if q1 = form.getvalue('q1')
-    q1_value = form.getvalue('1')
+    q1 = form.getvalue('q1')
+    if q1_value = form.getvalue('1')
     print('معافى')
     result = 'معافى'
     
