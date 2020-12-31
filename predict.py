@@ -199,6 +199,7 @@ def runJob():
     result = ''
     if (0 <=precision_score(y_test, yhat, average = "weighted", labels=[1], zero_division=0) <= 0.73) or (recall_score(y_test, yhat, average = "weighted", labels=[1], zero_division=0) == 0.71) or (0<=f1_score (y_test, yhat,average='weighted', labels=[1], zero_division=0)<= 0.72):\
         print('exposed')
+        result= 'exposed'
     elif (0 <=precision_score(y_test, yhat, average = "weighted", labels=[1], zero_division=0) <= 0.73) and (recall_score(y_test, yhat, average = "weighted", labels=[1], zero_division=0) == 0.71) and (0<=f1_score (y_test, yhat,average='weighted', labels=[1], zero_division=0)<= 0.72):
         print('exposed')
     elif (0 <=precision_score(y_test, yhat, average = "weighted", labels=[1], zero_division=0) <= 0.73) or (recall_score(y_test, yhat, average = "weighted", labels=[1], zero_division=0) == 0.71) and (0<=f1_score (y_test, yhat,average='weighted', labels=[1], zero_division=0)<= 0.72):
